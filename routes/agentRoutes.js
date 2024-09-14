@@ -5,7 +5,7 @@ const { handleBarcodeScan } = require('../controllers/barcodeController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Route to handle the chat flow with query in the body
-router.post('/chat',authMiddleware, handleChat);
+router.post('/chat', handleChat);
 router.post('/scan', handleBarcodeScan);
 
 module.exports = router;
